@@ -1,0 +1,39 @@
+Instructions for AOE 5984 - Assignment #1 
+
+"Adventures in bash scripting"
+
+This assignment will be collected at 9:30 AM on Thursday 5 Sept 2013
+
+Notes: Ensure that your work can be easily reproduced by the instructor! 
+Document your work within the script using comments 
+#Comments follow the '#' symbol unless they are
+#PBS in which case the resource manager is listening!
+##PBS - this line, however, would be a comment
+
+Write a shell script which satisfies the following list of requirements:
+
+1. Visit the blueridge user guide at: www.arc.vt.edu/resources/hpc/blueridge.php
+   Follow the instructions to submit jobs to the allocation associated with this course.
+   Edit the sample runscript to use the course allocation code: AOE5984 
+
+2. Edit the runscript to submit a job to the scheduler with the following request:
+   (a) four nodes and two processor cores per node
+   (b) set the walltime to five minutes
+
+3. Using PBS environment variables, print out the total number of procesor cores 
+   assigned to your job
+
+4. Within your job script, load the modules for gcc/4.7.2 and mvapich2/1.9a2
+   (a) Print out the location of the compilers: mpicc, mpicxx and mpif90
+   (b) Print out the $LD_LIBRARY_PATH environment variable
+
+5. Within your job script, print out the list of nodes where your job is running 
+
+6. Using the 'hostname' command, print out the identity of the compute node where
+   your job is running. Explain what makes this node special as compared to the 
+   other nodes assigned to your job.
+
+7. Using ssh, log into each of the compute nodes assigned to your job and print
+   the following line from each:
+
+   echo "I am " `hostname`
