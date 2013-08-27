@@ -2,7 +2,7 @@ Instructions for AOE 5984 - Assignment #1
 
 "Adventures in bash scripting"
 
-This assignment will be collected at 9:30 AM on Thursday 5 Sept 2013
+This assignment will be collected at 9:00 AM on Thursday 5 Sept 2013
 
 Notes: Ensure that your work can be easily reproduced by the instructor! 
 Document your work within the script using comments 
