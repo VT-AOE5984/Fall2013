@@ -1,0 +1,16 @@
+# Assignment 3
+#
+# Scalability of ScaLAPACK
+#
+# 1) Follow the steps outlined in the slides for Lecture 6 
+#    to build ScaLAPACK in your home directory on BlueRidge
+#
+# 1) Write a runscript to run run the LU decomposition test 
+#    example located at:
+#       ScaLAPACK/TESTING/xdlu
+#
+# 3) Verify that all tests are passed and submit
+#    	 a) your runscript
+#	 b) copy of the output files that
+#	    demonstrate the performance 
+#
