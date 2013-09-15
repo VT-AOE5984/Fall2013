@@ -1,4 +1,5 @@
 # Assignment 3
+# Due Friday 20 September 2013
 #
 # Scalability of ScaLAPACK: Part I
 #
