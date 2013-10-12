@@ -1,0 +1,23 @@
+# Assignment 5 - Due Friday 18 October 2013
+#
+# MPI Communication Fundamentals
+#
+# 1) The performance of small MPI communications is limited by latency, which is a function
+#    of both hardware and software. Using one of the provided codes (mpi_latency.c or mpi_latency.f)
+#    compare the latency for MPI communication that is obtained using mvapich2 and openmpi on 
+#    blueridge. Use two nodes with one MPI process per node.
+#
+# 2) The performance of large MPI communications is limited by the bandwidth of the network.
+#    Using the provided codes, compare the performance for blocking and non-blocking communications
+#    for the following sequence of message sizes: 250000,500000,750000,1000000.
+#
+#    (change the values of STARTSIZE, ENDSIZE and INCREMENT)
+#  
+#
+# 3) Collective communications such as MPI_Scatter and MPI_Gather can greatly simplify
+#    the coding process when many processes are involved in communication. This example
+#    considers MPI_Scatter and MPI_Gather. The provided codes mpi_scatter.c and mpi_scatter.f execute
+#    a simple MPI_Scatter operation for a four node system. Once each process has it's part
+#    of the original array, the values are updated. Use MPI_Gather to return the updated 
+#    values to process rank = 0.
+#
