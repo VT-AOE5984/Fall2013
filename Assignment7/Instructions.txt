@@ -5,7 +5,7 @@
 #
 # 1) Carry out a strong scaling study by varying the process grid for a
 #    LU factorization of a matrix of fixed size. The size of the matrix
-#    the size of the blocks, 
+#    and the size of the blocks should be chosen to improve the performnace.
 #
 #  NOTE: Increase the memory available to the code by increasing the 
 #        parameter 'TOTMEM' in the file 'pdludriver.f' located in the
