@@ -1,0 +1,32 @@
+# Assignment 8 - Due Friday 8 November 2013
+#
+# Introduction to OpenFOAM:  set-up and tutorials
+#
+# 1. load the OpenFOAM environment on BlueRidge using the OpenFOAM module
+#
+# 2. modify your .bashrc so that it is automatically loaded upon login
+#
+# 3. verify that the OpenFOAM installation is functional
+#
+# 4. identify the environment variables which are set by the OpenFOAM environment.  Based on these
+#    variables, identify:  which C++ compiler was used, was OpenFOAM compiled as single- or
+#    double-precision, which MPI library is OpenFOAM linked to?
+#
+# 5. identify important OpenFOAM linux aliases.  Hint:  look in $WM_PROJECT_DIR/etc/config/ 
+#
+# 6. copy the tutorials in $FOAM_TUTORIALS to your $WORK directory
+#
+# 7. run the lid-driven cavity tutorial, $WORK/tutorials/incompressible/simpleFoam/pitzDaily.  
+#
+# 8. run a tutorial of your choice.   
+#
+#
+#  What to hand in:
+#
+# 1.  A text-file "report" which documents output from parts 2, 3, 4, 5. 
+#
+# 2.  Plot the solution residuals from part 7 to document convergence.   Make an 
+#     image of the velocity field using ParaView.
+#
+# 3.  Communicate the results from part 8 using a plot and a visualization.  Make sure to 
+#     identify the solver and case that you studied. 
