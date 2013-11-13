@@ -16,7 +16,7 @@
 #
 # 6. copy the tutorials in $FOAM_TUTORIALS to your $WORK directory
 #
-# 7. run the lid-driven cavity tutorial, $WORK/tutorials/incompressible/simpleFoam/pitzDaily.  
+# 7. run the backward-facing-step tutorial, $WORK/tutorials/incompressible/simpleFoam/pitzDaily.  
 #
 # 8. run a tutorial of your choice.   
 #
