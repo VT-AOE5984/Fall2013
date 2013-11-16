@@ -21,12 +21,12 @@
 #
 #     B.   A plot of cellDist for your fine mesh for each of the decompositions.
 #
-#     B.   Plots of parallel efficiency vs. number of processors
+#     C.   Plots of parallel efficiency vs. number of processors
 #
-#     C.   Study your log file and answer the question:   does domain decomposition impact the convegence
+#     D.   Study your log file and answer the question:   does domain decomposition impact the convegence
 #          of the linear solver for the pressure equation?   Can you make a plot which shows this?
 #
-#     D.   Short discussion on your observations.   
+#     E.   Short discussion on your observations.   
 # 
 #
 #------------------------
