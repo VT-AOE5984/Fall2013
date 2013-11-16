@@ -1,32 +1,41 @@
-# Assignment 8 - Due Friday 8 November 2013
+# Assignment 9 - Due Friday 22 November 2013
 #
-# Introduction to OpenFOAM:  set-up and tutorials
+# Introduction to OpenFOAM:  parallel computing
 #
-# 1. load the OpenFOAM environment on BlueRidge using the OpenFOAM module
+# 1. The purpose of this assignment is to conduct a parallel scaling-study for the simpleFoam solver 
+#    using the pitzDaily tutorial.   To complete this assignment you need to do the following,
+# 
+#     A.  run the baseline pitzDaily tutorial (12225 hexahedral cells) on 1-, 2-, 4-, 8-, 16-, 32-, 64-processors.
 #
-# 2. modify your .bashrc so that it is automatically loaded upon login
+#     B.  modify the blockMeshDict so that you have a mesh of approximately 500,000 cells.   Redo the scaling study.
 #
-# 3. verify that the OpenFOAM installation is functional
-#
-# 4. identify the environment variables which are set by the OpenFOAM environment.  Based on these
-#    variables, identify:  which C++ compiler was used, was OpenFOAM compiled as single- or
-#    double-precision, which MPI library is OpenFOAM linked to?
-#
-# 5. identify important OpenFOAM linux aliases.  Hint:  look in $WM_PROJECT_DIR/etc/config/ 
-#
-# 6. copy the tutorials in $FOAM_TUTORIALS to your $WORK directory
-#
-# 7. run the backward-facing-step tutorial, $WORK/tutorials/incompressible/simpleFoam/pitzDaily.  
-#
-# 8. run a tutorial of your choice.   
+#     C.  modify the blockMeshDict so that you have a mesh of approximately 5,000,000 cells.   Redo the scaling study.
 #
 #
 #  What to hand in:
 #
-# 1.  A text-file "report" which documents output from parts 2, 3, 4, 5. 
+# 1.  A text-file "report" which documents your work.   Your report should include the following elements,
 #
-# 2.  Plot the solution residuals from part 7 to document convergence.   Make an 
-#     image of the velocity field using ParaView.
+#     A.   Documentation of your modifications to the meshes.   A plot showing average number of cells-per-processor
+#          for each decomposition.
 #
-# 3.  Communicate the results from part 8 using a plot and a visualization.  Make sure to 
-#     identify the solver and case that you studied. 
+#     B.   A plot of cellDist for your fine mesh for each of the decompositions.
+#
+#     B.   Plots of parallel efficiency vs. number of processors
+#
+#     C.   Study your log file and answer the question:   does domain decomposition impact the convegence
+#          of the linear solver for the pressure equation?   Can you make a plot which shows this?
+#
+#     D.   Short discussion on your observations.   
+# 
+#
+#------------------------
+#   SUGGESTION
+#------------------------
+#
+#   To conduct a scaling study, you need to extract information from the log file on wall-clock time.   Be careful
+#   to exclude I/O from this.   For example, since the writeInterval in system/controlDict is set to 50, only use
+#   the wall-clock-time for time-step 1 to 40.   This will eliminate I/O and give a scaling based solely on solution
+#   of the Navier-Stokes equations.    Bonus question:   what happens to your scaling if you include wall-clock-time
+#   for the entire simulation, including I/O?    What happens if you change the writeInterval to 5?
+#
